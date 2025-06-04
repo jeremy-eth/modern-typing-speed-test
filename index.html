@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Typing Speed Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Test Your Typing Speed</h1>
+            <p class="subtitle">Start typing to begin the test</p>
+        </header>
+
+        <main class="main">
+            <div class="metrics">
+                <div class="metric-box">
+                    <span class="metric-value" id="time">60</span>
+                    <span class="metric-label">seconds</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value" id="wpm">0</span>
+                    <span class="metric-label">wpm</span>
+                </div>
+                <div class="metric-box">
+                    <span class="metric-value" id="accuracy">0</span>
+                    <span class="metric-label">accuracy</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="start-btn">
+                    <span class="btn-text">Start Test</span>
+                    <span class="btn-description">Press to begin typing test</span>
+                </button>
+                <button id="reset-btn" class="reset-btn" disabled>
+                    <span class="btn-text">Reset</span>
+                    <span class="btn-description">Start a new test</span>
+                </button>
+            </div>
+
+            <div class="test-container">
+                <div class="sample-text-container">
+                    <h3 class="section-title">Sample Text</h3>
+                    <div id="sample-text" class="sample-text"></div>
+                </div>
+                <div class="input-container">
+                    <h3 class="section-title">Your Text</h3>
+                    <textarea 
+                        id="input-field" 
+                        class="input-field" 
+                        placeholder="The test will begin when you click Start Test..."
+                        spellcheck="false"
+                        disabled
+                    ></textarea>
+                </div>
+            </div>
+            </div>
+
+            <div class="results" id="results">
+                <h2>Your Results</h2>
+                <div class="result-metrics"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
