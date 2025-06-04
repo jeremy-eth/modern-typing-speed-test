@@ -1,7 +1,4 @@
 
-Built by https://www.blackbox.ai
-
----
 
 # Modern Typing Speed Test
 
